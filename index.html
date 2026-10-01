@@ -1,1 +1,985 @@
 
+
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>قائداعظم محمد علی جناحؒ | مکمل زندگی</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:"Noto Nastaliq Urdu","Jameel Noori Nastaleeq",Arial,sans-serif;
+    background:#f4f8f5;
+    color:#222;
+    line-height:2.1;
+}
+
+/* HEADER */
+
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:linear-gradient(135deg,#003d2b,#00875a);
+    color:white;
+    padding:15px 7%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 3px 15px #0005;
+}
+
+.logo{
+    font-size:25px;
+    font-weight:bold;
+    color:#ffd700;
+}
+
+nav{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:5px 10px;
+    font-size:15px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#ffd700;
+}
+
+/* HERO */
+
+.hero{
+    min-height:92vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:50px 20px;
+
+    background:
+    linear-gradient(#003d2bcc,#00000099),
+    url("quaid.jpg");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.hero-content{
+    max-width:900px;
+    color:white;
+}
+
+.hero h1{
+    font-size:60px;
+    color:#ffd700;
+    margin-bottom:10px;
+}
+
+.hero h2{
+    font-size:32px;
+}
+
+.hero p{
+    font-size:21px;
+    margin-top:15px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:10px 30px;
+    background:#ffd700;
+    color:#003d2b;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:scale(1.08);
+    background:white;
+}
+
+/* SECTIONS */
+
+section{
+    padding:75px 8%;
+}
+
+.title{
+    text-align:center;
+    margin-bottom:45px;
+}
+
+.title h2{
+    font-size:38px;
+    color:#006b46;
+}
+
+.title span{
+    display:block;
+    width:90px;
+    height:4px;
+    background:#d4af37;
+    margin:8px auto;
+}
+
+/* INTRO */
+
+.intro{
+    max-width:1000px;
+    margin:auto;
+    background:white;
+    padding:35px;
+    border-radius:18px;
+    box-shadow:0 5px 25px #0001;
+    font-size:19px;
+}
+
+/* INFO CARDS */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:28px;
+    border-radius:16px;
+    text-align:center;
+    border-top:5px solid #00875a;
+    box-shadow:0 5px 20px #0001;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 12px 30px #0002;
+}
+
+.card .icon{
+    font-size:42px;
+}
+
+.card h3{
+    color:#006b46;
+    font-size:23px;
+    margin:10px 0;
+}
+
+/* LIFE */
+
+.life-box{
+    display:flex;
+    gap:40px;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.life-img{
+    flex:1;
+    min-width:280px;
+}
+
+.life-img img{
+    width:100%;
+    max-width:430px;
+    display:block;
+    margin:auto;
+    border-radius:18px;
+    box-shadow:0 10px 30px #0003;
+}
+
+.life-text{
+    flex:2;
+    min-width:300px;
+    font-size:18px;
+}
+
+/* TIMELINE */
+
+.timeline{
+    max-width:1000px;
+    margin:auto;
+    position:relative;
+}
+
+.timeline:before{
+    content:"";
+    position:absolute;
+    right:20px;
+    top:0;
+    bottom:0;
+    width:4px;
+    background:#00875a;
+}
+
+.event{
+    position:relative;
+    background:white;
+    margin:25px 0;
+    padding:25px 35px;
+    margin-right:50px;
+    border-radius:15px;
+    box-shadow:0 5px 20px #0001;
+}
+
+.event:before{
+    content:"";
+    position:absolute;
+    right:-39px;
+    top:30px;
+    width:18px;
+    height:18px;
+    background:#ffd700;
+    border:4px solid #00875a;
+    border-radius:50%;
+}
+
+.event .year{
+    display:inline-block;
+    background:#006b46;
+    color:white;
+    padding:3px 15px;
+    border-radius:20px;
+    margin-bottom:8px;
+    font-weight:bold;
+}
+
+.event h3{
+    color:#006b46;
+    font-size:24px;
+}
+
+/* SPECIAL */
+
+.special{
+    background:#003d2b;
+    color:white;
+}
+
+.special .title h2{
+    color:#ffd700;
+}
+
+.special-card{
+    background:#ffffff12;
+    border:1px solid #ffffff33;
+    padding:30px;
+    border-radius:18px;
+    margin-bottom:20px;
+}
+
+.special-card h3{
+    color:#ffd700;
+    font-size:25px;
+}
+
+/* QUOTE */
+
+.quote{
+    text-align:center;
+    background:linear-gradient(135deg,#006b46,#003d2b);
+    color:white;
+    padding:80px 20px;
+}
+
+.quote h2{
+    color:#ffd700;
+    font-size:38px;
+}
+
+.quote p{
+    font-size:28px;
+    margin-top:15px;
+}
+
+/* DEVELOPER */
+
+.developer{
+    background:#111827;
+    padding:65px 20px;
+    text-align:center;
+}
+
+.developer-card{
+    max-width:520px;
+    margin:auto;
+    background:white;
+    padding:35px;
+    border-radius:20px;
+    border:3px solid #d4af37;
+    box-shadow:0 10px 35px #0005;
+}
+
+.developer-logo{
+    width:80px;
+    height:80px;
+    margin:auto;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:linear-gradient(135deg,#006b46,#00a86b);
+    color:white;
+    font-size:24px;
+    font-weight:bold;
+    border:4px solid #d4af37;
+}
+
+.created{
+    color:#777;
+    margin-top:12px;
+    letter-spacing:2px;
+}
+
+.developer h2{
+    color:#006b46;
+    font-size:27px;
+}
+
+.developer p:last-child{
+    margin-top:10px;
+}
+
+/* FOOTER */
+
+footer{
+    background:#00291e;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+footer strong{
+    color:#ffd700;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+        gap:8px;
+    }
+
+    .logo{
+        font-size:21px;
+    }
+
+    nav a{
+        font-size:13px;
+        margin:3px 5px;
+    }
+
+    .hero h1{
+        font-size:38px;
+    }
+
+    .hero h2{
+        font-size:23px;
+    }
+
+    .hero p{
+        font-size:17px;
+    }
+
+    section{
+        padding:55px 5%;
+    }
+
+    .title h2{
+        font-size:30px;
+    }
+
+    .event{
+        margin-right:40px;
+        padding:20px;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+<div class="logo">
+🇵🇰 قائداعظم
+</div>
+
+<nav>
+<a href="#home">ہوم</a>
+<a href="#birth">پیدائش</a>
+<a href="#education">تعلیم</a>
+<a href="#politics">سیاست</a>
+<a href="#movement">پاکستان تحریک</a>
+<a href="#pakistan">قیام پاکستان</a>
+<a href="#last">آخری زندگی</a>
+<a href="#developer">Developer</a>
+</nav>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<h1>قائداعظم محمد علی جناحؒ</h1>
+
+<h2>بابائے قوم — بانیٔ پاکستان</h2>
+
+<p>
+25 دسمبر 1876 — 11 ستمبر 1948
+</p>
+
+<p>
+قائداعظم کی مکمل زندگی، سیاسی جدوجہد اور قیامِ پاکستان کی داستان
+</p>
+
+<a href="#birth" class="btn">
+زندگی کا سفر شروع کریں
+</a>
+
+</div>
+
+</section>
+
+
+<!-- INTRO -->
+
+<section>
+
+<div class="title">
+<h2>قائداعظم کون تھے؟</h2>
+<span></span>
+</div>
+
+<div class="intro">
+
+<p>
+محمد علی جناح برصغیر کے معروف وکیل، سیاست دان اور بانیٔ پاکستان تھے۔
+وہ پاکستان کے پہلے گورنر جنرل بھی رہے۔ انہوں نے اپنی سیاسی زندگی میں
+آئینی اور سیاسی جدوجہد کے ذریعے مسلمانوں کے سیاسی حقوق کے لیے کام کیا۔
+</p>
+
+<p>
+پاکستان کی سرکاری تاریخ میں انہیں قائداعظم اور بابائے قوم کے القابات سے
+یاد کیا جاتا ہے۔ ان کی زندگی کا بڑا حصہ قانون، سیاست اور برصغیر کے
+مسلمانوں کی سیاسی نمائندگی سے وابستہ رہا۔
+</p>
+
+</div>
+
+</section>
+
+
+<!-- BIRTH -->
+
+<section id="birth">
+
+<div class="title">
+<h2>پیدائش اور بچپن</h2>
+<span></span>
+</div>
+
+<div class="life-box">
+
+<div class="life-img">
+<img src="quaid.jpg" alt="قائداعظم">
+</div>
+
+<div class="life-text">
+
+<p>
+قائداعظم محمد علی جناح 25 دسمبر 1876 کو کراچی میں پیدا ہوئے۔
+ان کا تعلق ایک مسلمان کاروباری خاندان سے تھا۔
+</p>
+
+<p>
+ان کے والد کا نام جناح بھائی پونجا اور والدہ کا نام مٹھی بائی تھا۔
+قائداعظم اپنے خاندان کے سات بچوں میں پہلے بیٹے تھے۔
+</p>
+
+<p>
+ان کا بچپن کراچی میں گزرا اور انہوں نے ابتدائی تعلیم کراچی کے
+تعلیمی اداروں میں حاصل کی۔
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- EDUCATION -->
+
+<section id="education">
+
+<div class="title">
+<h2>تعلیم اور لندن کا سفر</h2>
+<span></span>
+</div>
+
+<div class="cards">
+
+<div class="card">
+<div class="icon">🏫</div>
+<h3>ابتدائی تعلیم</h3>
+<p>
+قائداعظم نے کراچی میں سندھ مدرسۃ الاسلام اور کرسچن مشنری سوسائٹی
+ہائی اسکول سمیت تعلیمی اداروں میں تعلیم حاصل کی۔
+</p>
+</div>
+
+<div class="card">
+<div class="icon">🇬🇧</div>
+<h3>لندن</h3>
+<p>
+وہ قانون کی تعلیم حاصل کرنے کے لیے انگلستان گئے اور لنکنز اِن سے
+بار ایٹ لا کی تعلیم حاصل کی۔
+</p>
+</div>
+
+<div class="card">
+<div class="icon">⚖️</div>
+<h3>وکیل</h3>
+<p>
+تعلیم مکمل کرنے کے بعد انہوں نے وکالت کے شعبے میں عملی زندگی کا آغاز کیا۔
+</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- EARLY POLITICS -->
+
+<section id="politics">
+
+<div class="title">
+<h2>سیاسی زندگی کا آغاز</h2>
+<span></span>
+</div>
+
+<div class="timeline">
+
+<div class="event">
+<span class="year">1897</span>
+<h3>وکالت</h3>
+<p>
+قائداعظم نے بمبئی ہائی کورٹ میں وکالت شروع کی اور رفتہ رفتہ
+ایک نمایاں وکیل کے طور پر مقام حاصل کیا۔
+</p>
+</div>
+
+<div class="event">
+<span class="year">1906</span>
+<h3>سیاسی سرگرمیاں</h3>
+<p>
+انہوں نے ہندوستان کی سیاسی زندگی میں فعال کردار ادا کیا اور
+آئینی اصلاحات اور خود حکمرانی کے معاملات میں حصہ لیا۔
+</p>
+</div>
+
+<div class="event">
+<span class="year">1910</span>
+<h3>امپیریل لیجسلیٹو کونسل</h3>
+<p>
+وہ امپیریل لیجسلیٹو کونسل کے رکن منتخب ہوئے۔
+</p>
+</div>
+
+<div class="event">
+<span class="year">1913</span>
+<h3>مسلم لیگ</h3>
+<p>
+قائداعظم آل انڈیا مسلم لیگ میں شامل ہوئے اور بعد میں اس کی قیادت
+میں مرکزی کردار ادا کیا۔
+</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- LUCKNOW -->
+
+<section>
+
+<div class="title">
+<h2>لکھنؤ پیکٹ</h2>
+<span></span>
+</div>
+
+<div class="intro">
+
+<p>
+1916 میں مسلم لیگ اور کانگریس کے درمیان لکھنؤ پیکٹ کے لیے قائداعظم
+نے اہم کردار ادا کیا۔ اس دور میں وہ ہندو مسلم سیاسی تعاون اور
+آئینی طریقۂ کار کے حامی کے طور پر بھی نمایاں ہوئے۔
+</p>
+
+</div>
+
+</section>
+
+
+<!-- FOURTEEN POINTS -->
+
+<section class="special">
+
+<div class="title">
+<h2>چودہ نکات</h2>
+<span></span>
+</div>
+
+<div class="special-card">
+
+<h3>1929 — مسلمانوں کے سیاسی حقوق</h3>
+
+<p>
+قائداعظم نے مسلمانوں کے سیاسی حقوق کے تحفظ کے لیے اپنے مشہور
+چودہ نکات پیش کیے۔ ان نکات میں صوبائی خودمختاری، مسلمانوں کی
+مناسب نمائندگی اور آئینی تحفظات جیسے معاملات شامل تھے۔
+</p>
+
+</div>
+
+<div class="special-card">
+
+<h3>سیاسی جدوجہد</h3>
+
+<p>
+1920 کی دہائی کے بعد قائداعظم کی سیاسی جدوجہد میں مسلمانوں کی
+جداگانہ سیاسی شناخت اور آئینی حقوق کا معاملہ زیادہ نمایاں ہوتا گیا۔
+</p>
+
+</div>
+
+</section>
+
+
+<!-- 1930s -->
+
+<section>
+
+<div class="title">
+<h2>1930 کی دہائی</h2>
+<span></span>
+</div>
+
+<div class="intro">
+
+<p>
+1930 کی دہائی میں قائداعظم دوبارہ ہندوستان کی سیاست میں زیادہ فعال ہوئے۔
+انہوں نے مسلم لیگ کو منظم کرنے اور مسلمانوں کی سیاسی نمائندگی کو مضبوط
+کرنے پر توجہ دی۔
+</p>
+
+<p>
+اس عرصے میں مسلم لیگ کی تنظیم نو ہوئی اور قائداعظم کی قیادت میں
+مسلمانوں کے سیاسی مطالبات زیادہ واضح انداز میں سامنے آنے لگے۔
+</p>
+
+</div>
+
+</section>
+
+
+<!-- LAHORE RESOLUTION -->
+
+<section id="movement">
+
+<div class="title">
+<h2>قراردادِ لاہور — 1940</h2>
+<span></span>
+</div>
+
+<div class="life-box">
+
+<div class="life-text">
+
+<p>
+مارچ 1940 میں آل انڈیا مسلم لیگ کا تاریخی اجلاس لاہور میں منعقد ہوا۔
+اس اجلاس میں مسلمانوں کے سیاسی مستقبل کے حوالے سے اہم قرارداد منظور ہوئی،
+جسے بعد میں قراردادِ پاکستان بھی کہا گیا۔
+</p>
+
+<p>
+قائداعظم کی قیادت میں مسلم لیگ نے برصغیر کے مسلمانوں کے لیے
+ایک الگ سیاسی راستے کے مطالبے کو منظم سیاسی تحریک میں تبدیل کیا۔
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- 1945 1946 -->
+
+<section>
+
+<div class="title">
+<h2>1945–1946 کے انتخابات</h2>
+<span></span>
+</div>
+
+<div class="intro">
+
+<p>
+1945–46 کے انتخابات میں مسلم لیگ نے مسلمانوں کے لیے مخصوص نشستوں
+کی بڑی تعداد حاصل کی۔ اس کامیابی نے مسلم لیگ کے سیاسی مطالبات کو
+مزید مضبوط کیا اور قیامِ پاکستان کی طرف سیاسی عمل تیز ہوا۔
+</p>
+
+</div>
+
+</section>
+
+
+<!-- PARTITION -->
+
+<section id="pakistan" class="special">
+
+<div class="title">
+<h2>قیامِ پاکستان</h2>
+<span></span>
+</div>
+
+<div class="special-card">
+
+<h3>1947 — ایک نئے ملک کا قیام</h3>
+
+<p>
+1947 میں برطانوی ہندوستان کی تقسیم کے نتیجے میں پاکستان ایک آزاد ریاست
+کے طور پر قائم ہوا۔ 14 اگست 1947 کو پاکستان کا قیام عمل میں آیا۔
+</p>
+
+</div>
+
+<div class="special-card">
+
+<h3>قائداعظم — پہلے گورنر جنرل</h3>
+
+<p>
+قائداعظم محمد علی جناح پاکستان کے پہلے گورنر جنرل بنے۔
+انہوں نے نئی ریاست کے ابتدائی اداروں، حکومت اور پالیسیوں کی تشکیل
+میں مرکزی کردار ادا کیا۔
+</p>
+
+</div>
+
+</section>
+
+
+<!-- GOVERNOR GENERAL -->
+
+<section>
+
+<div class="title">
+<h2>قیامِ پاکستان کے بعد</h2>
+<span></span>
+</div>
+
+<div class="cards">
+
+<div class="card">
+<div class="icon">🇵🇰</div>
+<h3>نئی ریاست</h3>
+<p>
+نئے ملک کے حکومتی اداروں کو منظم کرنے اور ریاستی نظام قائم کرنے
+میں قائداعظم نے اہم کردار ادا کیا۔
+</p>
+</div>
+
+<div class="card">
+<div class="icon">🏛️</div>
+<h3>ریاستی ادارے</h3>
+<p>
+انہوں نے سرکاری امور میں نظم و ضبط، قانون اور ذمہ داری پر زور دیا۔
+</p>
+</div>
+
+<div class="card">
+<div class="icon">🤝</div>
+<h3>اقلیتوں کے حقوق</h3>
+<p>
+قائداعظم نے پاکستان میں شہریوں کے حقوق اور مذہبی آزادی کے حوالے سے
+اپنے مختلف خطابات میں بات کی۔
+</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- LAST LIFE -->
+
+<section id="last">
+
+<div class="title">
+<h2>آخری زندگی</h2>
+<span></span>
+</div>
+
+<div class="timeline">
+
+<div class="event">
+<span class="year">1947</span>
+<h3>پاکستان کے پہلے گورنر جنرل</h3>
+<p>
+قائداعظم نے آزادی کے بعد پاکستان کے پہلے گورنر جنرل کی حیثیت سے
+ریاستی معاملات کی نگرانی کی۔
+</p>
+</div>
+
+<div class="event">
+<span class="year">1948</span>
+<h3>مسلسل سرکاری ذمہ داریاں</h3>
+<p>
+خراب صحت کے باوجود انہوں نے نئی ریاست کے ابتدائی معاملات میں
+اپنی ذمہ داریاں جاری رکھیں۔
+</p>
+</div>
+
+<div class="event">
+<span class="year">11 ستمبر 1948</span>
+<h3>وفات</h3>
+<p>
+قائداعظم محمد علی جناح 11 ستمبر 1948 کو کراچی میں وفات پا گئے۔
+ان کی عمر 71 برس تھی۔
+</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- LEGACY -->
+
+<section>
+
+<div class="title">
+<h2>قائداعظم کا ورثہ</h2>
+<span></span>
+</div>
+
+<div class="intro">
+
+<p>
+قائداعظم کی زندگی قانون، سیاست، آئینی جدوجہد اور قیادت کے مختلف
+مراحل پر مشتمل تھی۔ پاکستان کے قیام کے بعد بھی انہوں نے نئی ریاست
+کے ابتدائی اداروں اور حکومتی نظام کی تشکیل میں اہم کردار ادا کیا۔
+</p>
+
+<p>
+آج پاکستان میں ان کی زندگی اور سیاسی جدوجہد تاریخ کا ایک اہم موضوع
+ہے اور ان کے نام سے متعدد ادارے، عمارتیں اور قومی یادگاریں منسوب ہیں۔
+</p>
+
+</div>
+
+</section>
+
+
+<!-- QUOTE -->
+
+<section class="quote">
+
+<h2>قائداعظم کا مشہور اصول</h2>
+
+<p>
+"اتحاد، ایمان، نظم و ضبط"
+</p>
+
+</section>
+
+
+<!-- DEVELOPER -->
+
+<section class="developer" id="developer">
+
+<div class="developer-card">
+
+<div class="developer-logo">
+MNS
+</div>
+
+<p class="created">
+CREATED BY
+</p>
+
+<h2>
+Mudasir Nazir Sheikh
+</h2>
+
+<p>
+Web Designer & Developer
+</p>
+
+<p>
+یہ تاریخی ویب سائٹ قائداعظم محمد علی جناحؒ کی زندگی،
+سیاسی جدوجہد اور قیامِ پاکستان کے اہم مراحل کو
+خوبصورت انداز میں پیش کرنے کے لیے تیار کی گئی ہے۔
+</p>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>
+© 2026 Quaid-e-Azam Muhammad Ali Jinnah
+</p>
+
+<p>
+Designed & Developed by
+<strong>Mudasir Nazir Sheikh</strong>
+</p>
+
+</footer>
+
+
+</body>
+</html>
